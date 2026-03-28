@@ -19,10 +19,10 @@ services:
       QT_X11_NO_MITSHM: "1"
       SDL_VIDEODRIVER: "x11"
       NVIDIA_DRIVER_CAPABILITIES: "all"
-      NVIDIA_VISIBLE_DEVICES: "0"                        # explicitly GPU 0 = 4070 Ti
+      NVIDIA_VISIBLE_DEVICES: "0"
       __GL_SYNC_TO_VBLANK: "0"
       __NV_PRIME_RENDER_OFFLOAD: "1"
-      VK_ICD_FILENAMES: "/usr/share/vulkan/icd.d/nvidia_icd.json"  # NVIDIA only, no AMD
+      VK_ICD_FILENAMES: "/usr/share/vulkan/icd.d/nvidia_icd.json"
     volumes:
       - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
       - "/tmp/.docker.xauth:/tmp/.docker.xauth:rw"

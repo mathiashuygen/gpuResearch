@@ -1,0 +1,3 @@
+[submodule "nvidiaAuto/alpasim"]
+	path = nvidiaAuto/alpasim
+	url = git@github.com:mathiashuygen/alpasim
